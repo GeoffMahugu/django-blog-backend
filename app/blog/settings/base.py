@@ -169,3 +169,5 @@ LOGGING = {
         },
     },
 }
+STATIC_ROOT = "/app/static"
+STATIC_URL = '/static/'
