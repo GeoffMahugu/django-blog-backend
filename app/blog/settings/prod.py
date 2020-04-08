@@ -6,6 +6,6 @@ from blog.settings.base import *
 SECRET_KEY = 'GMSpt(*n(-wk@0^j3g-kd4nw^kt@qssos&cir-__55q)0$f4ma9btmBLOG'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
