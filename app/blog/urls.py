@@ -18,6 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # url(r'^api/v1/account/',
-    #     include('wayapay.account.api.urls', namespace='api-accounts')),
+    url(r'^api/v1/account/',
+        include('account.urls', namespace='api-accounts')),
+    url(r'^api/v1/blog/',
+        include('article.urls', namespace='api-blogs')),
 ]

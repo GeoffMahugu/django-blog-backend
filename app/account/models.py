@@ -4,12 +4,11 @@ from django.utils.text import slugify
 
 from rest_framework.reverse import reverse as api_reverse
 
-
-
 class Author(models.Model):
     slug = models.SlugField(unique=True, null=True, blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              on_delete=models.CASCADE)
+    active = models.BooleanField(default = False)
     timestamp = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
@@ -37,5 +36,5 @@ class Author(models.Model):
         ordering = ['timestamp']
 
     def get_api_url(self, request=None):
-        return api_reverse("api-accounts:account-rud", kwargs={'pk': self.pk}, request=request)
+        return api_reverse("api-accounts:author-rud", kwargs={'pk': self.pk}, request=request)
 
