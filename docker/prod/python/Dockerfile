@@ -1,0 +1,12 @@
+FROM python:3.6
+MAINTAINER geoffreymahugu@gmail.com
+
+COPY ./app /app
+
+WORKDIR /app
+
+RUN pip install -r requirements/prod.txt
+
+EXPOSE 8000
+
+CMD ["gunicorn", "django.wsgi", "-b 0.0.0.0:8000"]
