@@ -13,12 +13,12 @@ class ArticleSerializer(serializers.ModelSerializer):
             'author',
             'title',
             'body',
+            'active',
             'timestamp',
             'updated',
         ]
         read_only_fields = [
             'url',
-            'slug',
             'pk',
             'author',
             'timestamp',

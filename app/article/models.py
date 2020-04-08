@@ -9,28 +9,12 @@ class Article(models.Model):
                              on_delete=models.CASCADE)
     title = models.name = models.CharField(max_length=500,blank=True, null=True)
     body = models.TextField()
+    active = models.BooleanField(default = False)
     timestamp = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __str__(self):
-        return str(self.user)
-
-
-    @property
-    def first_name(self):
-        return self.user.first_name
-
-    @property
-    def last_name(self):
-        return self.user.last_name
-
-    @property
-    def email(self):
-        return self.user.email
-
-    def save(self, *args, **kwargs):
-        self.slug = slugify(str(self.user))
-        super(Author, self).save(*args, **kwargs)
+        return str(self.pk)
 
     class Meta:
         ordering = ['timestamp']
