@@ -47,7 +47,8 @@ INSTALLED_APPS = (
     'rest_framework',
 
     # Blog management apps
-    'account'
+    'account',
+    'article',
 )
 
 MIDDLEWARE = (
