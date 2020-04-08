@@ -9,4 +9,4 @@ RUN pip install -r requirements/prod.txt
 
 EXPOSE 8000
 
-CMD ["gunicorn", "django.wsgi", "-b 0.0.0.0:8000"]
+CMD ["gunicorn", "blog.wsgi", "-b 0.0.0.0:8000"]

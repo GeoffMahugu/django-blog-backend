@@ -1,4 +1,4 @@
-# Docker
+# Docker Settup
 
 This is the file used to build the docker-container:
 
@@ -17,5 +17,5 @@ Setting up the docker dev environment is quite simple (it is assumed you have do
 # System Maintenance
 
 1. Reload systemd: ``systemctl daemon-reload``
-2. And enable the service: ``systemctl enable docker-compose-django``
-3. Start the service (or reboot): ``systemctl start docker-compose-django``
+2. And enable the service: ``systemctl enable docker-compose-blog``
+3. Start the service (or reboot): ``systemctl start docker-compose-blog``
