@@ -1,4 +1,4 @@
-# Docker Settup
+# Docker Setup
 
 This is the file used to build the docker-container:
 
