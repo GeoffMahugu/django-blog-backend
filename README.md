@@ -32,5 +32,5 @@ Proceed to install PipEnv
 
 **iv) Run project**
 
-``python3 app.py``
+``python3 ./app/manage.py runserver``
 
