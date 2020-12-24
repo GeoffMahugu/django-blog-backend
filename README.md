@@ -12,7 +12,7 @@ See [docs/docker.md](docs/docker.md) for information about the docker setup.
 
 ## Using PipEnv Setup
 
-i). Install PipEnv
+**i). Install PipEnv**
 
 Check version to make sure you are running python3
 
@@ -22,11 +22,11 @@ Proceed to install PipEnv
 
 ``pip3 install pipenv``
 
-ii) Activate Env Shell
+**ii) Activate Env Shell**
 
 ``pipenv shell``
 
-iii) Install Packages
+**iii) Install Packages**
 
 ``pipenv install``
 
