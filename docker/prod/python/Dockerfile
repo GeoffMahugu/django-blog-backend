@@ -1,5 +1,4 @@
 FROM python:3.6
-MAINTAINER geoffreymahugu@gmail.com
 
 COPY ./app /app
 
